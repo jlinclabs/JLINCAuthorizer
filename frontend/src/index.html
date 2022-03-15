@@ -7,10 +7,25 @@
 
 <body data-wails-drag>
   <div class="logo"></div>
-  <div class="result" id="result">Please enter your name below 👇</div>
+  <div class="result" id="result">Choose an app and sign on:</div>
   <div class="input-box" id="input" data-wails-no-drag>
-    <input class="input" id="name" type="text" autocomplete="off">
-    <button class="btn" onclick="auth()">Authorize</button>
+    <form target="" id="chooseTarget" onsubmit="auth">
+      <p>
+        <input type="radio" name="choice" value="catwalkers">
+        <label id="catwalkers" for="catwalkers" style="color:#e98677;">Cat Walkers</label>
+      </p>
+      <p>
+        <input type="radio" name="choice" value="badbirders">
+        <label id="badbirders" for="badbirders" style="color:#78fbfd;">Bad Birders</label>
+      </p>
+      <p>
+        <input type="radio" name="choice" value="dopedogs">
+        <label id="dopedogs" for="dopedogs" style="color:#eee697;">Dope Dogs</label>
+      </p>
+      <p style="text-align:center;margin-top:25px;">
+        <button type="submit" id="signon">Sign On</button>
+      </p>
+    </form>
   </div>
 
   <script src="/main.js"></script>

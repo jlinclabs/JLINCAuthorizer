@@ -36,5 +36,5 @@ func (b *App) shutdown(ctx context.Context) {
 func (b *App) Auth(name string) string {
 	target := "https://dope-dogs.jlinc.io/login?tru=" + name
 	browser.OpenURL(target)
-	return fmt.Sprintf("Authorize me to: %s", name)
+	return fmt.Sprintf("You have been authorized to: %s", name)
 }

@@ -1,7 +1,7 @@
 html {
-  background-color: rgba(33, 37, 43, 0.2);
+  background-color: #111118;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 body {
@@ -22,18 +22,23 @@ body {
 
 .logo {
   display: block;
-  width: 35%;
-  height: 35%;
-  margin: auto;
+  width: 311px;
+  height: 54px;
+  margin: 40px 30px;
   padding: 15% 0 0;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("./assets/images/logo-dark.svg");
+  background-image: url("./assets/images/JLINC-banner.png");
 }
 .result {
   height: 20px;
   line-height: 20px;
-  margin: 1.5rem auto;
+}
+
+.input-box {
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
 }
 .input-box .btn {
   width: 60px;
@@ -69,4 +74,14 @@ body {
 .input-box .input:focus {
   border: none;
   background-color: rgba(255, 255, 255, 1);
+}
+
+#signon {
+  background-color: #66f;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  width: 80px;
+  height:25px;
+  font-size: 14px;
 }

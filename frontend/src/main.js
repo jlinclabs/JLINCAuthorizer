@@ -1,13 +1,7 @@
-// Get input + focus
-let nameElement = document.getElementById("name");
-nameElement.focus();
+const formElem = document.getElementById("chooseTarget");
 
 // Setup the auth function
-window.auth = function () {
-
-  // Get name
-  let name = nameElement.value;
-
+window.auth = function (name) {
   // Call App.Auth(name)
   window.go.main.App.Auth(name).then((result) => {
     // Update result with data back from App.Auth()
@@ -15,8 +9,8 @@ window.auth = function () {
   });
 };
 
-nameElement.onkeydown = function (e) {
-  if (e.code === "Enter") {
-    window.auth();
-  }
-};
+formElem.onsubmit = function (e) {
+  e.preventDefault();
+  const name = document.querySelector('input[name="choice"]:checked').value;
+  window.auth(name);
+}
