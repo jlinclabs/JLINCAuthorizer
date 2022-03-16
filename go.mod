@@ -3,8 +3,9 @@ module jlincauthorizer
 go 1.17
 
 require (
-	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2
+	github.com/shengdoushi/base58 v1.0.0
 	github.com/wailsapp/wails/v2 v2.0.0-beta.33
+	golang.org/x/crypto v0.0.0-20210513164829-c07d793c2f9a
 )
 
 require (
@@ -26,6 +27,7 @@ require (
 	github.com/leaanthony/slicer v1.5.0 // indirect
 	github.com/leaanthony/typescriptify-golang-structs v0.1.7 // indirect
 	github.com/leaanthony/winc v0.0.0-20220208061147-37b059b9dc3b // indirect
+	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/savsgio/gotils v0.0.0-20200117113501-90175b0fbe3f // indirect
 	github.com/tkrajina/go-reflector v0.5.5 // indirect
