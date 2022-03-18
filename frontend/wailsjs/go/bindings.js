@@ -5,12 +5,12 @@ const go = {
   "main": {
     "App": {
       /**
-       * Auth
+       * Authz
        * @param {string} arg1 - Go Type: string
        * @returns {Promise<string>}  - Go Type: string
        */
-      "Auth": (arg1) => {
-        return window.go.main.App.Auth(arg1);
+      "Authz": (arg1) => {
+        return window.go.main.App.Authz(arg1);
       },
     },
   },

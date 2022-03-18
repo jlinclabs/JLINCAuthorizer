@@ -1,7 +1,7 @@
 export interface go {
   "main": {
     "App": {
-		Auth(arg1:string):Promise<string>
+		Authz(arg1:string):Promise<string>
     },
   }
 

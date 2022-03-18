@@ -1,16 +1,14 @@
 const formElem = document.getElementById("chooseTarget");
 
-// Setup the auth function
-window.auth = function (name) {
-  // Call App.Auth(name)
-  window.go.main.App.Auth(name).then((result) => {
-    // Update result with data back from App.Auth()
+// Setup the authz function
+window.authz = function (service) {
+  window.go.main.App.Authz(service).then((result) => {
     document.getElementById("result").innerText = result;
   });
 };
 
 formElem.onsubmit = function (e) {
   e.preventDefault();
-  const name = document.querySelector('input[name="choice"]:checked').value;
-  window.auth(name);
+  const service = document.querySelector('input[name="choice"]:checked').value;
+  window.authz(service);
 }
