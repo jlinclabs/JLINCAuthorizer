@@ -5,8 +5,8 @@ go 1.17
 require (
 	github.com/google/uuid v1.3.0
 	github.com/gowebpki/jcs v1.0.0
-	github.com/jlinclabs/go-jlinc-did v0.1.0-unpublished
-	github.com/jlinclabs/go-jwt v0.1.0-unpublished
+	github.com/jlinclabs/go-jlinc-did v0.0.0-20220330185831-917be68daed0
+	github.com/jlinclabs/go-jwt v0.1.0
 	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2
 	github.com/shengdoushi/base58 v1.0.0
 	github.com/wailsapp/wails/v2 v2.0.0-beta.34
@@ -41,7 +41,3 @@ require (
 	golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2 // indirect
 	golang.org/x/sys v0.0.0-20220114195835-da31bd327af9 // indirect
 )
-
-replace github.com/jlinclabs/go-jlinc-did v0.1.0-unpublished => ../go-jlinc-did
-
-replace github.com/jlinclabs/go-jwt v0.1.0-unpublished => ../go-jwt

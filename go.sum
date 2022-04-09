@@ -69,6 +69,10 @@ github.com/jchv/go-winloader v0.0.0-20200815041850-dec1ee9a7fd5/go.mod h1:alcuEE
 github.com/jchv/go-winloader v0.0.0-20210711035445-715c2860da7e h1:Q3+PugElBCf4PFpxhErSzU3/PY5sFL5Z6rfv4AbGAck=
 github.com/jchv/go-winloader v0.0.0-20210711035445-715c2860da7e/go.mod h1:alcuEEnZsY1WQsagKhZDsoPCRoOijYqhZvPwLG0kzVs=
 github.com/jessevdk/go-flags v1.5.0/go.mod h1:Fw0T6WPc1dYxT4mKEZRfG5kJhaTDP9pj1c2EWnYs/m4=
+github.com/jlinclabs/go-jlinc-did v0.0.0-20220330185831-917be68daed0 h1:yl3SWK8SVGkaOErxr/tpi+owlHZUq6rHlCuYF0TBOdM=
+github.com/jlinclabs/go-jlinc-did v0.0.0-20220330185831-917be68daed0/go.mod h1:YLWSDiRWiTVn7CIsEIFfzakt3kG320hDG871jKRD/ng=
+github.com/jlinclabs/go-jwt v0.1.0 h1:Ijy9JRqc/REUgKR5y8OJD7ZoDJwIAtUKekSMg9q1rkY=
+github.com/jlinclabs/go-jwt v0.1.0/go.mod h1:4vfSBstfuydhZFDY4mptCoLCAwGpMUy7q4lMGs1CWFk=
 github.com/json-iterator/go v1.1.9/go.mod h1:KdQUCv79m/52Kvf8AW2vK1V8akMuk1QjK/uOdHXbAo4=
 github.com/kevinburke/ssh_config v0.0.0-20201106050909-4977a11b4351/go.mod h1:CT57kijsi8u/K/BOFA39wgDQJ9CxiF4nAY/ojJ6r6mM=
 github.com/klauspost/compress v1.8.2/go.mod h1:RyIbtBH6LamlWaDj8nUwkbUhJ87Yi3uG0guNDohfE1A=
