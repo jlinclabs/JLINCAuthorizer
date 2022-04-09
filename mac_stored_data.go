@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"io/ioutil"
-	"log"
 	"os"
 
 	"github.com/google/uuid"
@@ -30,8 +29,12 @@ func MacStoredData(service string) (string, error) {
 			if err != nil {
 				return zcap, err
 			}
-			log.Printf("data: %v, error: %v\n", data, err)
 			// return invocation JWT here
+			zcap, err = MakeInvocation(data)
+			if err != nil {
+				return zcap, err
+			}
+			return zcap, nil
 		} else {
 			return zcap, err //generic ioutil.ReadDir error
 		}
@@ -58,8 +61,11 @@ func MacStoredData(service string) (string, error) {
 
 	// did not find service data in data file
 	data, err := newServiceData(service, dataFile, datadir+"/"+datafilename)
-	log.Printf("data: %v, error: %v\n", data, err)
 	// return invocation JWT here
+	zcap, err = MakeInvocation(data)
+	if err != nil {
+		return zcap, err
+	}
 	return zcap, nil
 }
 
