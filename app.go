@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"log"
 
 	"github.com/pkg/browser"
 )
@@ -33,8 +34,12 @@ func (b *App) shutdown(ctx context.Context) {
 	// Perform your teardown here
 }
 
-func (b *App) Auth(name string) string {
-	target := "https://dope-dogs.jlinc.io/login?tru=" + name
+func (b *App) Authz(service string) string {
+	target, err := Authorize(service)
+	if err != nil {
+		log.Fatalf("Authorize error: %v", err)
+	}
 	browser.OpenURL(target)
-	return fmt.Sprintf("You have been authorized to: %s", name)
+
+	return fmt.Sprintf("You have been authorized to: %s", service)
 }

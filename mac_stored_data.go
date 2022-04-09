@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/google/uuid"
 	did "github.com/jlinclabs/go-jlinc-did"
 )
 
@@ -45,8 +46,11 @@ func MacStoredData(service string) (string, error) {
 			}
 			err = json.Unmarshal(jsonData, &dataFile)
 			if data, ok := dataFile[service]; ok {
-				log.Printf("service: %s, data: %v\n", service, data)
 				// return invocation JWT here
+				zcap, err = MakeInvocation(data)
+				if err != nil {
+					return zcap, err
+				}
 				return zcap, nil
 			}
 		}
@@ -72,6 +76,7 @@ func newServiceData(service string, datafile map[string]DidData, datafileaddr st
 		return DidData{}, err
 	}
 
+	forSaving.ParentCapability = uuid.New()
 	datafile[service] = forSaving
 	//marshal dataFile and write it to file
 	dataFileJson, err := json.Marshal(datafile)

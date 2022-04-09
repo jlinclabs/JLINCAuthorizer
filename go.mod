@@ -3,7 +3,11 @@ module jlincauthorizer
 go 1.17
 
 require (
+	github.com/google/uuid v1.3.0
+	github.com/gowebpki/jcs v1.0.0
 	github.com/jlinclabs/go-jlinc-did v0.1.0-unpublished
+	github.com/jlinclabs/go-jwt v0.1.0-unpublished
+	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2
 	github.com/shengdoushi/base58 v1.0.0
 	github.com/wailsapp/wails/v2 v2.0.0-beta.34
 )
@@ -17,7 +21,6 @@ require (
 	github.com/gofiber/fiber/v2 v2.17.0 // indirect
 	github.com/gofiber/websocket/v2 v2.0.8 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
-	github.com/google/uuid v1.3.0 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/jchv/go-winloader v0.0.0-20210711035445-715c2860da7e // indirect
 	github.com/klauspost/compress v1.12.2 // indirect
@@ -28,7 +31,6 @@ require (
 	github.com/leaanthony/slicer v1.5.0 // indirect
 	github.com/leaanthony/typescriptify-golang-structs v0.1.7 // indirect
 	github.com/leaanthony/winc v0.0.0-20220208061147-37b059b9dc3b // indirect
-	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/savsgio/gotils v0.0.0-20200117113501-90175b0fbe3f // indirect
 	github.com/tkrajina/go-reflector v0.5.5 // indirect
